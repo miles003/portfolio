@@ -1,467 +1,261 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1">
-  <title>Miles Portfolio</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/93084fae9a.js" crossorigin="anonymous"></script>
-  <style>
-    .portfolio-item .portfolio_img {
-      height: 267px !important;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Miles | Software Engineer</title>
 
-  <!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d25;
+  --primary: #4f8cff;
+  --text: #ffffff;
+  --muted: #9aa4b2;
+  --border: #2a2f3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+p {
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(79,140,255,0.3);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(15,17,23,0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  padding-top: 160px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero p {
+  margin: 20px 0 40px;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.skills span {
+  display: inline-block;
+  background: var(--card);
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+</style>
 </head>
 
 <body>
 
-  <!--Hero_Section-->
-  <section id="hero_section" class="top_cont_outer">
-    <div class="hero_wrapper">
-      <div class="container">
-        <div class="hero_section">
-          <div class="row">
-            <div class="col-md-12">
+<nav>
+  <div class="container nav-content">
+    <div><strong>Miles</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-              <div class="top_left_cont intro zoomIn wow animated">
-                <h2>I AM MILES<br> <strong>DEVELOPER</strong></h2>
-                <p>
-                  - To be able to work in career oriented challenging environment that promotes personal growth, and
-                  uplifts professional developments. <br>
-                  - I aim to achieve the senior level or CTO in the future.
-                </p>
-                <div class="underline"></div>
-                <ul class="social_links">
-                  <li class="facebook animated bounceIn wow delay-03s animated"
-                    style="visibility: visible; animation-name: bounceIn;"><a
-                      href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Building Scalable Systems That Actually Survive Production.</h1>
+    <p>
+      Software Engineer specialized in backend architecture, high-traffic systems, 
+      and performance optimization. I design systems that don't break under pressure.
+    </p>
+    <a href="#contact" class="btn">Let's Work Together</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I design and build high-performance web applications with a focus on scalability,
+      data integrity, and architectural resilience. From API design to distributed
+      systems, I prioritize correctness and long-term maintainability.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>High-Traffic Betting Platform</h3>
+        <p>
+          Engineered a system handling millions of daily transactions with
+          atomic Redis validation and async-safe Lua scripting.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Real-Time WebSocket Infrastructure</h3>
+        <p>
+          Built scalable event broadcasting architecture with optimized worker orchestration.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Revenue Share SaaS Platform</h3>
+        <p>
+          Architected a performance-first SaaS backend integrated with cloud storage,
+          CI/CD pipeline, and zero-downtime deployments.
+        </p>
       </div>
     </div>
-  </section>
-  <!--Hero_Section-->
+  </div>
+</section>
 
-  <!--Header_section-->
-  <header id="header_wrapper">
-    <div class="container">
-      <div class="header_box">
-        <!--  <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>-->
-        <nav class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-              <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          </div>
-          <div id="main-nav" class="collapse navbar-collapse navStyle">
-            <ul class="nav navbar-nav" id="mainNav">
-              <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-              <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
-              <li><a href="#service" class="scroll-link">Skills</a></li>
-              <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+<section id="skills">
+  <div class="container">
+    <h2>Core Technologies</h2>
+    <div class="skills">
+      <span>Laravel</span>
+      <span>MySQL</span>
+      <span>Redis</span>
+      <span>React</span>
+      <span>React Native</span>
+      <span>Google Cloud</span>
+      <span>Git</span>
     </div>
-  </header>
-  <!--Header_section-->
+  </div>
+</section>
 
-  <section id="aboutUs">
-    <!--Aboutus-->
-    <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-      <div class="container">
-        <div class="inner_section">
-          <div class="row">
-            <div class="col-lg-12 about-us">
-              <div class="row">
-                <div class="col-md-6"> <img class="img-responsive" src="img/about1.png" align=""> </div>
-                <!-- /.col-md-6 -->
-                <div class="col-md-6">
-                  <h3>Who Am I</h3>
-                  <p>
-                    I am Miles, I already have work experienced for 2 years As Web Developer.
-                    I'm 24 Years Old Currently Living at Philippines. I'm also graduated Bachelor of science in information technology. 
-                    I am passionate about programming because I do love thinking and Solving problem.
-                  </p>
-                  <!-- /.about-us-list -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Let’s Build Something Strong.</h2>
+    <p>Email: milesbalatar@gmail.com</p>
+    <br/>
+    <a href="#" class="btn">Download Resume</a>
+  </div>
+</section>
 
-                </div><!-- /.col-md-6 -->
-
-              </div><!-- /.row -->
-            </div><!-- /.col-lg-12 -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Aboutus-->
-
-
-  <!--Service-->
-  <section id="service">
-    <div class="container">
-      <h2>Skills Set</h2>
-      <div class="service_wrapper" style="padding:0;">
-        <div class="row">
-          <div class="col-md-2">
-            <img src="skill/php.svg" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/vue.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/laravel.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/js.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/react.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/gcp.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/codeigniter.svg" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/jquery.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/mysql.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/bootstrap.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/nginx.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/firebase.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/ubuntu.svg" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/webpack.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-          <div class="col-md-2">
-            <img src="skill/npm.png" width="100%" height="150px" style="object-fit: contain;">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Service-->
-
-
-
-
-  <!-- Portfolio -->
-  <section id="Portfolio" class="content">
-
-    <!-- Container -->
-    <div class="container portfolio_title">
-
-      <!-- Title -->
-      <div class="section-title">
-        <h2>Projects</h2>
-        <h6>Project that i develop and collab with other developer.</h6>
-
-      </div>
-      <!--/Title -->
-
-    </div>
-    <!-- Container -->
-
-    <div class="portfolio-top"></div>
-
-    <!-- Portfolio Filters -->
-    <div class="portfolio">
-
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-          <li><a id="all" href="#" data-filter="*" class="active">
-              <h5>All</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".solo">
-              <h5>Solo Project</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".collab">
-              <h5>Collab with other developer</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".web">
-              <h5>Web App</h5>
-            </a></li>
-            <li><a class="" href="#" data-filter=".mobile">
-              <h5>Mobile App</h5>
-            </a></li>
-        </ul>
-      </div>
-      <!--/Portfolio Filters -->
-
-      <!-- Portfolio Wrapper -->
-      <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;"
-        id="portfolio_wrapper">
-        <!-- Portfolio Item -->
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web collab isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/researchsale.png" alt="Portfolio 1">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Research<span>Sale</span></h2>
-                <p>A website that i develop with senior dev this project from Primzen Inc.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four mobile isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/pluckoomerchant.JPG" alt="Portfolio 1">
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=com.pluckoo_seller" target="_blank" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Pluckoo<span>Merchant</span></h2>
-                <p>Mobile App for merchant</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four mobile isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/pluckoorider.JPG" alt="Portfolio 1">
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=com.pluckoo_rider_v1" target="_blank" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Pluckoo<span>Rider</span></h2>
-                <p>Mobile App for Rider</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web collab isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/reviewers.png" alt="Portfolio 2">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Reviewers</h2>
-                <p>A website that i develop with senior dev this project from Primzen Inc.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/koreanproduct.png" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>KoreanProduct-<span>Line</span></h2>
-                <p>Solo project that i developed for Client he's a seller of beauty products from MDP world.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/covid.png" alt="Portfolio 3">
-          </div>
-          <a href="https://github.com/miles003/covid19-ph-tracker" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>CovidPH<span> Tracker</span></h2>
-                <p>CLI version Covid19 PH Tracker</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/gal220.png" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Gal220<span> Services</span></h2>
-                <p>CMS Small Project</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/portfolio_pic4.jpg" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Betting Site 1</h2>
-                <p>Solo project that i developed, Website Link is not available for privacy purpose.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/portfolio_pic4.jpg" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Betting Site 2</h2>
-                <p>Solo project that i developed, Website Link is not available for privacy purpose.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/portfolio_pic4.jpg" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Betting Site 3</h2>
-                <p>Solo project that i developed, Website Link is not available for privacy purpose.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/portfolio_pic4.jpg" alt="Portfolio 3">
-          </div>
-          <a href="#" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Betting Site 4</h2>
-                <p>Solo project that i developed, Website Link is not available for privacy purpose.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/tradingselim.jpg" alt="Portfolio 3">
-          </div>
-          <a href="https://tradingselim.com/" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Trading Sniping Bot</h2>
-                <p>A Sniping bot use for any launching on BSC network of blockchain.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-        <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   web solo isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/portfolio_pic10.jpg" alt="Portfolio 3">
-          </div>
-          <a href="https://t.me/tradingselimbot" class="fancybox">
-            <figcaption>
-              <div>
-                <h2>Telegram Bot</h2>
-                <p>A Bot that use by community members to track all upcoming IDO projects.</p>
-              </div>
-            </figcaption>
-          </a>
-        </figure>
-
-        <!--/Portfolio Item -->
-        <!--/Portfolio Item -->
-
-      </div>
-      <!--/Portfolio Wrapper -->
-
-    </div>
-    <!--/Portfolio Filters -->
-
-    <div class="portfolio_btm"></div>
-
-
-    <div id="project_container">
-      <div class="clear"></div>
-      <div id="project_data"></div>
-    </div>
-
-
-  </section>
-  <!--/Portfolio -->
-  <!--/Team-->
-  <!--Footer-->
-  <footer class="footer_wrapper" id="contact">
-    <div class="container">
-
-    </div>
-    <div class="container">
-      <div class="footer_bottom"><span>Copyright © 2019. The best <a href="https://webthemez.com/tag/free"
-            target="_blank">Free Template</a> by WebThemez.com</span> </div>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="js/jquery.nav.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/wow.js"></script>
-  <script src="contact/jqBootstrapValidation.js"></script>
-  <script src="contact/contact_me.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+<footer>
+  © 2026 Miles. Built with precision.
+</footer>
 
 </body>
-
 </html>
