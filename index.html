@@ -2,164 +2,194 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Miles Balatar | Software Engineer</title>
+  <title>Miles Balatar | Software Engineer</title>
 
-<meta name="description" content="Miles Balatar is a software engineer specializing in high-concurrency backend systems, Laravel architecture, Redis optimization, and scalable cloud infrastructure.">
-<meta name="keywords" content="Miles Balatar, Software Engineer, Laravel Developer, Backend Engineer, Redis, MySQL, PHP Developer, Cloud Infrastructure">
-<meta name="author" content="Miles Balatar">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://milesbalatar.com">
+  <meta name="description"
+    content="Miles Balatar is a software engineer specializing in high-concurrency backend systems, Laravel architecture, Redis optimization, and scalable cloud infrastructure.">
+  <meta name="keywords"
+    content="Miles Balatar, Software Engineer, Laravel Developer, Backend Engineer, Redis, MySQL, PHP Developer, Cloud Infrastructure">
+  <meta name="author" content="Miles Balatar">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="iaHPBtCuFtvtmQZOwpksqrtlSZexWPi6xmjR3b83m4w" />
+  <link rel="canonical" href="https://milesbalatar.com">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Miles Balatar | Software Engineer">
-<meta property="og:description" content="Software engineer specializing in scalable backend architecture, Laravel systems, Redis optimization, and cloud infrastructure.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://milesbalatar.com">
-<meta property="og:image" content="https://milesbalatar.com/Profile.png">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Miles Balatar | Software Engineer">
+  <meta property="og:description"
+    content="Software engineer specializing in scalable backend architecture, Laravel systems, Redis optimization, and cloud infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milesbalatar.com">
+  <meta property="og:image" content="https://milesbalatar.com/Profile.png">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Miles Balatar | Software Engineer">
-<meta name="twitter:description" content="Backend engineer focused on high-concurrency systems and scalable architecture.">
-<meta name="twitter:image" content="https://milesbalatar.com/Profile.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miles Balatar | Software Engineer">
+  <meta name="twitter:description"
+    content="Backend engineer focused on high-concurrency systems and scalable architecture.">
+  <meta name="twitter:image" content="https://milesbalatar.com/Profile.png">
 
-<link rel="icon" href="Profile.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="Profile.png" sizes="16x16" type="image/png">
 
-<!-- Performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-:root {
---bg:#0e0f14;
---card:#16181f;
---card-light:#1c1f27;
---border:#262a35;
---text:#ffffff;
---muted:#9aa4b2;
---primary:#4f8cff;
-}
+  <style>
+    :root {
+      --bg: #0e0f14;
+      --card: #16181f;
+      --card-light: #1c1f27;
+      --border: #262a35;
+      --text: #ffffff;
+      --muted: #9aa4b2;
+      --primary: #4f8cff;
+    }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-font-family:'Inter',sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.6;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-.container{
-width:92%;
-max-width:1200px;
-margin:auto;
-}
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-section{padding:10px 0;}
+    section {
+      padding: 10px 0;
+    }
 
-.card{
-background:var(--card);
-border:1px solid var(--border);
-border-radius:14px;
-padding:30px;
-}
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+    }
 
-h1{font-size:2.5rem;font-weight:800;}
-h2{font-size:1.5rem;margin-bottom:20px;}
-h3{font-size:1.1rem;margin-bottom:5px;}
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
 
-p{color:var(--muted);}
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
 
-.header{
-display:flex;
-gap:40px;
-align-items:center;
-padding:80px 0 40px;
-}
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
 
-.profile-img{
-width:140px;
-height:140px;
-border-radius:16px;
-background:#222;
-object-fit:cover;
-}
+    p {
+      color: var(--muted);
+    }
 
-.grid-2{
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:30px;
-}
+    .header {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      padding: 80px 0 40px;
+    }
 
-.tech-stack span{
-display:inline-block;
-background:var(--card-light);
-border:1px solid var(--border);
-padding:8px 14px;
-margin:6px;
-border-radius:6px;
-font-size:.85rem;
-}
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      background: #222;
+      object-fit: cover;
+    }
 
-.timeline{
-position:relative;
-margin-left:10px;
-padding-left:25px;
-border-left:2px solid var(--border);
-}
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
 
-.timeline-item{
-position:relative;
-margin-bottom:35px;
-padding-left:10px;
-}
+    .tech-stack span {
+      display: inline-block;
+      background: var(--card-light);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 6px;
+      font-size: .85rem;
+    }
 
-.timeline-item::before{
-content:"";
-position:absolute;
-left:-33px;
-top:6px;
-width:12px;
-height:12px;
-background:var(--primary);
-border-radius:50%;
-box-shadow:0 0 0 4px var(--bg);
-}
+    .timeline {
+      position: relative;
+      margin-left: 10px;
+      padding-left: 25px;
+      border-left: 2px solid var(--border);
+    }
 
-.timeline-item .year{
-display:block;
-font-size:.8rem;
-color:var(--muted);
-margin-bottom:10px;
-}
+    .timeline-item {
+      position: relative;
+      margin-bottom: 35px;
+      padding-left: 10px;
+    }
 
-footer{
-text-align:center;
-padding:40px 0;
-border-top:1px solid var(--border);
-color:var(--muted);
-font-size:.9rem;
-}
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -33px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--bg);
+    }
 
-.embed-container{
-width:100%;
-overflow:hidden;
-border-radius:12px;
-}
+    .timeline-item .year {
+      display: block;
+      font-size: .8rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
 
-@media(max-width:900px){
-.grid-2{grid-template-columns:1fr;}
-.header{flex-direction:column;align-items:flex-start;}
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .9rem;
+    }
 
-<!-- Structured Data -->
-<script type="application/ld+json">
+    .embed-container {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    @media(max-width:900px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@type":"Person",
@@ -183,182 +213,175 @@ border-radius:12px;
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-<header class="header">
+    <header class="header">
 
-<img src="Profile.png"
-class="profile-img"
-alt="Miles Balatar Software Engineer"
-width="140"
-height="140"
-loading="eager">
+      <img src="Profile.png" class="profile-img" alt="Miles Balatar Software Engineer" width="140" height="140"
+        loading="eager">
 
-<div>
-<h1>Miles Balatar</h1>
-<p>Software Engineer</p>
-</div>
+      <div>
+        <h1>Miles Balatar</h1>
+        <p>Software Engineer</p>
+      </div>
 
-</header>
+    </header>
 
-<main class="grid-2">
+    <main class="grid-2">
 
-<div>
+      <div>
 
-<section>
-<article class="card">
+        <section>
+          <article class="card">
 
-<h2>About</h2>
+            <h2>About</h2>
 
-<p>
-I’m a software engineer specializing in building high-concurrency, production-grade applications using PHP
-(Laravel), MySQL, Redis, and Cloud Infrastructure.
-</p>
+            <p>
+              I’m a software engineer specializing in building high-concurrency, production-grade applications using PHP
+              (Laravel), MySQL, Redis, and Cloud Infrastructure.
+            </p>
 
-<br>
+            <br>
 
-<p>
-My work focuses on designing systems that remain stable under heavy transactional load with emphasis on
-data integrity, performance optimization, and architectural clarity.
-</p>
+            <p>
+              My work focuses on designing systems that remain stable under heavy transactional load with emphasis on
+              data integrity, performance optimization, and architectural clarity.
+            </p>
 
-<br>
+            <br>
 
-<p>
-I build scalable backend platforms including distributed caching strategies, queue processing,
-real-time validation workflows, and cloud deployments.
-</p>
+            <p>
+              I build scalable backend platforms including distributed caching strategies, queue processing,
+              real-time validation workflows, and cloud deployments.
+            </p>
 
-</article>
-</section>
+          </article>
+        </section>
 
-<section>
-<article class="card">
+        <section>
+          <article class="card">
 
-<h2>Tech Stack</h2>
+            <h2>Tech Stack</h2>
 
-<h3>Backend</h3>
-<div class="tech-stack">
-<span>Laravel</span>
-<span>PHP</span>
-<span>MySQL</span>
-<span>Redis</span>
-<span>WebSockets</span>
-<span>JWT</span>
-</div>
+            <h3>Backend</h3>
+            <div class="tech-stack">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+              <span>WebSockets</span>
+              <span>JWT</span>
+            </div>
 
-<h3>Infrastructure</h3>
-<div class="tech-stack">
-<span>Google Cloud</span>
-<span>Load Balancing</span>
-<span>Cloud SQL</span>
-</div>
+            <h3>Infrastructure</h3>
+            <div class="tech-stack">
+              <span>Google Cloud</span>
+              <span>Load Balancing</span>
+              <span>Cloud SQL</span>
+            </div>
 
-<h3>Frontend</h3>
-<div class="tech-stack">
-<span>React</span>
-<span>Vue</span>
-<span>React Native</span>
-</div>
+            <h3>Frontend</h3>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Vue</span>
+              <span>React Native</span>
+            </div>
 
-</article>
-</section>
+          </article>
+        </section>
 
-<section>
-<article class="card">
+        <section>
+          <article class="card">
 
-<h2>Community Membership</h2>
+            <h2>Community Membership</h2>
 
-<div class="embed-container">
-<iframe
-src="https://www.devs100.com/access-card/embed?name=Miles%20Balatar"
-width="100%"
-height="420"
-title="Devs100 Community Access Card"
-frameborder="0"
-loading="lazy">
-</iframe>
-</div>
+            <div class="embed-container">
+              <iframe src="https://www.devs100.com/access-card/embed?name=Miles%20Balatar" width="100%" height="420"
+                title="Devs100 Community Access Card" frameborder="0" loading="lazy">
+              </iframe>
+            </div>
 
-</article>
-</section>
+          </article>
+        </section>
 
-</div>
+      </div>
 
-<aside>
+      <aside>
 
-<section>
-<div class="card">
+        <section>
+          <div class="card">
 
-<h2>Experience</h2>
+            <h2>Experience</h2>
 
-<div class="timeline">
+            <div class="timeline">
 
-<div class="timeline-item">
-<h3>Technical Partner</h3>
-<span class="year">2023 – Present</span>
-<p>Built and operate high-concurrency production systems using Laravel architecture, Redis optimization and cloud infrastructure.</p>
-</div>
+              <div class="timeline-item">
+                <h3>Technical Partner</h3>
+                <span class="year">2023 – Present</span>
+                <p>Built and operate high-concurrency production systems using Laravel architecture, Redis optimization
+                  and cloud infrastructure.</p>
+              </div>
 
-<div class="timeline-item">
-<h3>Software Engineer / Technical Lead</h3>
-<span class="year">2023 – Present</span>
-<p>Led full-stack system architecture and deployment for logistics and public-service platforms.</p>
-</div>
+              <div class="timeline-item">
+                <h3>Software Engineer / Technical Lead</h3>
+                <span class="year">2023 – Present</span>
+                <p>Led full-stack system architecture and deployment for logistics and public-service platforms.</p>
+              </div>
 
-<div class="timeline-item">
-<h3>IT Systems Developer</h3>
-<span class="year">2023 – Present</span>
-<p>Developed and maintained government systems with focus on reliability and system architecture.</p>
-</div>
+              <div class="timeline-item">
+                <h3>IT Systems Developer</h3>
+                <span class="year">2023 – Present</span>
+                <p>Developed and maintained government systems with focus on reliability and system architecture.</p>
+              </div>
 
-<div class="timeline-item">
-<h3>Backend Engineer</h3>
-<span class="year">2021 – 2023</span>
-<p>Built and maintained high-traffic backend services focused on API design and database optimization.</p>
-</div>
+              <div class="timeline-item">
+                <h3>Backend Engineer</h3>
+                <span class="year">2021 – 2023</span>
+                <p>Built and maintained high-traffic backend services focused on API design and database optimization.
+                </p>
+              </div>
 
-<div class="timeline-item">
-<h3>Backend Engineer</h3>
-<span class="year">2020 – 2021</span>
-<p>Implemented backend services and application improvements in production systems.</p>
-</div>
+              <div class="timeline-item">
+                <h3>Backend Engineer</h3>
+                <span class="year">2020 – 2021</span>
+                <p>Implemented backend services and application improvements in production systems.</p>
+              </div>
 
-<div class="timeline-item">
-<h3>Software Developer</h3>
-<span class="year">2019</span>
-<p>Supported internal web systems through feature development and maintenance.</p>
-</div>
+              <div class="timeline-item">
+                <h3>Software Developer</h3>
+                <span class="year">2019</span>
+                <p>Supported internal web systems through feature development and maintenance.</p>
+              </div>
 
-</div>
+            </div>
 
-</div>
-</section>
+          </div>
+        </section>
 
-<section>
-<div class="card">
+        <section>
+          <div class="card">
 
-<h2>Contact</h2>
+            <h2>Contact</h2>
 
-<p>Email:
-<a href="mailto:milesbalatar@gmail.com"
-aria-label="Send email to Miles Balatar">
-milesbalatar@gmail.com
-</a>
-</p>
+            <p>Email:
+              <a href="mailto:milesbalatar@gmail.com" aria-label="Send email to Miles Balatar">
+                milesbalatar@gmail.com
+              </a>
+            </p>
 
-</div>
-</section>
+          </div>
+        </section>
 
-</aside>
+      </aside>
 
-</main>
+    </main>
 
-<footer>
-© 2026 Miles Balatar — Software Engineer Focused.
-</footer>
+    <footer>
+      © 2026 Miles Balatar — Software Engineer Focused.
+    </footer>
 
-</div>
+  </div>
 
 </body>
+
 </html>
