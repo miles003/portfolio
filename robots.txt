@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://milesbalatar.com/sitemap.xml
